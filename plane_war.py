@@ -16,7 +16,7 @@ BLACK = (0,0,0)
 pygame.init()
 pygame.mixer.init()
 screen = pygame.display.set_mode((WIDTH,HEIGHT))
-pygame.display.set_caption('飞机大战-v.1.0.1')
+pygame.display.set_caption('飞机大战-v1.0.1')
 clock = pygame.time.Clock()
 
 folder = pathlib.Path(__file__).parent.resolve()
@@ -99,7 +99,7 @@ def new_rock():
 def draw_init():
     screen.blit(background_img,(0,0))
     draw_text(screen,'飞机大战',62,WIDTH/2,HEIGHT*2/8)
-    draw_text(screen,'版本:1.0.0',22,WIDTH/2,HEIGHT*3/8)
+    draw_text(screen,'版本:1.0.1',22,WIDTH/2,HEIGHT*3/8)
     draw_text(screen,'按住左右键移动飞机,空格键发射子弹',22,WIDTH/2,HEIGHT*4/8)
     draw_text(screen,'任意键开始游戏',22,WIDTH/2,HEIGHT*5/8)
     draw_text(screen,'作者:编程侯老师 搬运:Redsep3030',22,WIDTH/2,HEIGHT*7/8)
